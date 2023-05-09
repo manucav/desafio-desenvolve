@@ -1,0 +1,188 @@
+/* Importação de fonte via Google Fonts --------- */
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap");
+
+/* Alterações no root */
+:root {
+  --cerise-color: #db1e8c;
+  --carnation-pink-color: #ff97d3;
+  --pickled-bluewood-color: #33475b;
+  --white-color: #ffffff;
+  --royal-blue-color: #264fec;
+  --dark-blue-color: #0000d6;
+  --san-juan-color: #364372;
+  --black-color: #000000;
+}
+
+/* Reset básico --------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body --------- */
+body {
+  background-color: var(--pickled-bluewood-color);
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+/* Header --------- */
+header {
+  height: 80px;
+  background-color: var(--white-color);
+  display: flex;
+}
+
+.container-elementos-header {
+  width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.titulo-principal {
+  font-size: 24px;
+  color: var(--blue);
+  font-weight: 400;
+}
+
+.label-pesquisa {
+  background-color: var(--cerise-color);
+  height: 40px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  border-radius: 4px;
+}
+
+.input-pesquisa {
+  background-color: transparent;
+  padding: 4px;
+  border: none;
+}
+
+::placeholder {
+  color: var(--carnation-pink-color);
+}
+
+/* Trilhas */
+.container-trilhas-main {
+  width: 1280px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 40px 0;
+  gap: 32px;
+}
+
+.card-trilha {
+  width: calc((100% - 64px) / 3);
+  padding: 32px 32px 96px;
+  background: var(--white-color);
+  border-radius: 4px;
+  position: relative;
+}
+
+.card-trilha h2 {
+  font-size: 24px;
+  color: var(--san-juan-color);
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.card-trilha p {
+  color: var(--black-color);
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+
+.card-trilha a {
+  border: 1px solid var(--royal-blue-color);
+  border-radius: 4px;
+  padding: 16px;
+  text-decoration: none;
+  position: absolute;
+  bottom: 32px;
+  height: 54px;
+  width: 160px;
+  color: var(--royal-blue-color);
+  transition: 0.3s all;
+  text-align: center;
+}
+
+.card-trilha a:hover {
+  background-color: var(--royal-blue-color);
+  color: var(--white-color);
+  border-color: var(--dark-blue-color);
+}
+
+/* Footer */
+footer {
+  height: 110px;
+  background-color: var(--white-color);
+  display: flex;
+  align-items: center;
+}
+
+.container-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1280px;
+  margin: 0 auto;
+  height: 66.42px;
+}
+
+.container-icons-footer {
+  width: 128px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.logo-container-footer {
+  height: 62px;
+  width: 220px;
+}
+.container-icons-footer p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.container-texts-footer {
+  margin-right: 60px;
+}
+
+.container-texts-footer p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--black);
+}
+
+.informações-footer {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container-footer img:last-child {
+  margin-left: 24px;
+  margin-bottom: 10px;
+}
+
+.container-icons-footer img:nth-child(3) {
+  margin-left: 16px;
+}
+.container-icons-footer img:first-child {
+  margin-right: 16px;
+}
+
+.logo-desenvolve-detalhada {
+  margin-left: 105px;
+}
